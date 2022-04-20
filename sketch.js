@@ -1,3 +1,11 @@
+/*
+The structure to load the facemesh model and parse the response: https://editor.p5js.org/ml5/sketches/Facemesh_Webcam
+
+randomObj modified from my sketch: https://editor.p5js.org/nburg/sketches/4Pp0-FbiQ
+
+moving point lines modified from my sketch: https://editor.p5js.org/nburg/sketches/bFLENuZ3r
+*/
+
 let facemesh;
 let video;
 let predictions = [];
@@ -94,12 +102,10 @@ function randomObj(x, y, diam, fillColor) {
 
 
 function drawKeypoints(image, frameCt) {
-  fillColor = (random(255), random(255), 100);
   for (let i = 0; i < predictions.length; i += 1) {
     const keypoints = predictions[i].scaledMesh;
     
 
-    // Draw facial keypoints.
     for (let j = 0; j < keypoints.length; j += 1) {
       if (j == 61) {
         mouthPointY = keypoints[j][1];
@@ -111,7 +117,7 @@ function drawKeypoints(image, frameCt) {
 
       
 
-      fillColor = color(random(180), random(100), 100);
+      fillColor = color(150, random(255), 200)
 
       if (bottomLipY > mouthPointY) {
         const r = 255 - red(fillColor);
