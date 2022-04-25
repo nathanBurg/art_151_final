@@ -1,6 +1,6 @@
-Title: Just Smile
-Created by: Nathan Burg
-Date Published: 04/20/2022
+Title: Just Smile <br />
+Created by: Nathan Burg <br />
+Date Published: 04/20/2022 <br />
 
 This is an interactive piece which can function with one or more individuals present in the camera’s field of view. Every individual is masked with a changing yet somewhat static mask. However when one individual smiles, the mask is removed and the scene changes. The location of the mask and when one is smiling was determined using facial keypoints from [Facemesh](https://learn.ml5js.org/#/reference/facemesh) published by ml5. 
 
